@@ -1,0 +1,20 @@
+.profile-picture-logo {
+    height: 92%;
+    width: 92%;
+    background-image: url('../../assets/me.jpeg');
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    /* animation: pop-up 0.9s ease forwards; */
+    /* animation-delay: 1s; */
+}
+
+ul a {
+    color: white;
+}
+
+ul a:hover,:active {
+    color: white;
+    text-underline-offset: 6px;
+}
