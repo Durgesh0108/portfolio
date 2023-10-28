@@ -1,8 +1,10 @@
 import Profile from "./PortfolioContainer/Home/Profile";
 import "./App.css";
+
 import AboutMe from "./PortfolioContainer/AboutMe/aboutMe";
 import Resume from "./PortfolioContainer/Resume/resume";
 import Navbar from "./Components/Navbar/Navbar";
+import Projects from "./PortfolioContainer/Projects/Projects";
 
 function App() {
 	return (
@@ -11,6 +13,7 @@ function App() {
 			<Profile id="profile" />
 			<AboutMe id="aboutMe" />
 			<Resume id="resume" />
+			<Projects id="projects" />
 		</div>
 	);
 }

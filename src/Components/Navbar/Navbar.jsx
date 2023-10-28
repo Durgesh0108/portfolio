@@ -6,7 +6,7 @@ const Navbar = () =>
 {
 
     return (
-        <div className="fixed w-screen z-20">
+        <div className="fixed w-screen z-20" >
             <nav className="bg-orangeP dark:bg-gray-900 px-10" >
                 <div className="max-w-screen-xl py-2 flex flex-wrap items-center justify-between mx-auto text-white ">
                     <div href="#profile" className="flex gap-5">
@@ -22,7 +22,7 @@ const Navbar = () =>
                         </svg>
                     </button>
                     <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-                        <ul className="font-medium flex flex-col p-2 md:p-0 rounded-lg md:flex-row xl:gap-18 lg:gap-10 xmd:gap-2 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <ul className="font-medium flex flex-col p-2 text-xl md:p-0 rounded-lg md:flex-row xl:gap-18 lg:gap-10 xmd:gap-2 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                             <li>
                                 <a href="#profile" className="block py-2 px-2  rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Profile</a>
                             </li>
