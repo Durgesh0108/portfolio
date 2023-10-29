@@ -1,4 +1,4 @@
-import Typical from 'react-typical'
+// import Typical from 'react-typical'
 
 import { AiFillInstagram } from 'react-icons/ai'
 import { BsLinkedin } from 'react-icons/bs'
@@ -33,8 +33,8 @@ const Profile = ({id}) =>
                                 <span className="primary-text">
 
                                     <h1>
-                                        {/* Web Developer */}
-                                        <Typical
+                                        Web Developer
+                                        {/* <Typical
                                             loop={Infinity}
                                             steps={[
                                                 "Web Developer",
@@ -44,7 +44,7 @@ const Profile = ({id}) =>
                                                 "MERN Developer",
                                                 1000
                                             ]}
-                                        />
+                                        /> */}
                                     </h1>
                                     <span className='profile-role-tagline'>Knack of building application with front and back end operations</span>
                                 </span>
