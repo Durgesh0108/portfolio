@@ -5,6 +5,7 @@ import AboutMe from "./PortfolioContainer/AboutMe/aboutMe";
 import Resume from "./PortfolioContainer/Resume/resume";
 import Navbar from "./Components/Navbar/Navbar";
 import Projects from "./PortfolioContainer/Projects/Projects";
+import Certifications from "./PortfolioContainer/CertificatesAndCourses/Certifications";
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 			<AboutMe id="aboutMe" />
 			<Resume id="resume" />
 			<Projects id="projects" />
+			<Certifications id="certificates"/>
 		</div>
 	);
 }

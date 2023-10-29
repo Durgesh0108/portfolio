@@ -217,8 +217,85 @@ export const PERSONALSKILLS = [
 		percentagename: "80%",
 	},
 	{
-		id: 2,
+		id: 6,
 		personalskillname: "Problem Solving",
 		percentagename: "90%",
+	},
+];
+
+export const CERTIFICATION_COURSES = [
+	{
+		id: 1,
+		courseName: "The Web Developer Bootcamp 2023",
+		instructor: "Colt Steele",
+		Platform: "Udemy",
+		completionDate: "Sept 2023",
+		certificates: [
+			{
+				id: 1,
+				name: "Web Developer",
+				certificate: "Web_Developer_Colt_Steele.pdf",
+			},
+		],
+		description:
+			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
+		image: "food.jpg",
+	},
+	{
+		id: 2,
+		courseName:
+			"Node. Js, Express, MongoDb & More: The Complete Bootcamp 2023",
+		instructor: "Jonas Schmedtmann",
+		Platform: "Udemy",
+		completionDate: "March 2023",
+		certificates: [
+			{
+				id: 1,
+				name: "Web Developer",
+				certificate: "Node_Js_Jonas_Schmedtmann.pdf",
+			},
+		],
+		description:
+			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
+		image: "food.jpg",
+	},
+	{
+		id: 3,
+		courseName: "Web Development",
+		instructor: "Internshala",
+		Platform: "Internshala",
+		completionDate: "Sept 2023",
+		certificates: [
+			{
+				id: 1,
+				name: "Internshala Web Developement",
+				certificate: "Web_Internshala.pdf",
+			},
+			{
+				id: 2,
+				name: "N.S.D.C Web Developement",
+				certificate: "Web_NSDC.pdf",
+			},
+		],
+		description:
+			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
+		image: "food.jpg",
+	},
+	{
+		id: 4,
+		courseName: "The React JS Portfolio Website",
+		instructor: "Ehizeex Okwuose",
+		Platform: "Udemy",
+		completionDate: "Oct 2023",
+		certificates: [
+			{
+				id: 1,
+				name: "React Js Portfolio Website",
+				certificate: "React_Portfolio.pdf",
+			},
+		],
+		description:
+			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
+		image: "food.jpg",
 	},
 ];
