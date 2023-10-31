@@ -11,7 +11,7 @@ const Profile = ({id}) =>
     return (
         <>
             {/* <Navbar /> */}
-            <div className="home-container relative top-56 mt-48 md:top-32" id={id}>
+            <div className="home-container relative top-32 mb-32" id={id}>
                 <div className='profile-container'>
                     <div className="profile-parent">
                         <div className="profile-details">

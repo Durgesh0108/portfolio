@@ -5,8 +5,8 @@ import './Index.css'
 const Certification = ({ key, certification }) =>
 {
     return (
-        <Card key={key} className="bg-white p-[8px] md:p-3  ">
-            <div className='flex flex-col justify-between gap-4 w-[160px] sm:w-[280px] md:w-[420px]'>
+        <Card key={key} className="bg-white pb-3  ">
+            <div className='flex flex-col justify-between h-full gap-4 w-[160px] sm:w-[280px] md:w-[420px]'>
                 <div className="flex flex-col gap-4 ">
                     <div className='overlay-demo'>
                         <img src={`/img/${certification.image}`} alt={certification.courseName} className='image rounded-lg ' />
@@ -15,8 +15,8 @@ const Certification = ({ key, certification }) =>
                             <figcaption className='text font-semibold text-sm md:text-2xl'>{certification.courseName}</figcaption>
                         </div>
                     </div>
-                    <div className='md:px-3'>
-                        <p className='font-semibold text-base sm:text-xl md:text-2xl py-2'>{certification.courseName}</p>
+                    <div className='px-4 md:px-3'>
+                        <p className='font-semibold text-base sm:text-xl md:text-2xl py-2 tracking-wide'>{certification.courseName}</p>
                         <p className='text-xs md:text-lg opacity-70 text-justify'>{certification.description}</p>
                     </div>
                 </div>

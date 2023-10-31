@@ -1,10 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { TOTAL_SCREENS, GET_SCREEN_INDEX } from '../../../utilities/commonUtils'
+import ScrollService from '../../../utilities/ScrollService'
+// import { faBars } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import './Header.css'
+
 import 'flowbite';
-import './Navbar.css'
+import './../../../Components/Navbar/Navbar.css'
 
-const Navbar = () =>
+export default function Header()
 {
+    const [ selectedScreen, setSelectedScreen ] = useState(0)
+    const [ showHeadingOptions, setShowHeadingoptions ] = useState(false)
 
+    const updateCurrentScreen = (currentScreen) =>
+    {
+        if (!currentScreen || !currentScreen.screenInView)
+            return
+        let screenIndex = GET_SCREEN_INDEX(currentScreen.screenInView)
+        if (screenIndex < 0)
+            return
+    }
+
+    let currentScreenSubscription = ScrollService.currentScreenBroadcaster.subscribe(updateCurrentScreen)
+
+    const getHeaderOptions = () =>
+    {
+        return (
+            TOTAL_SCREENS.map((screen, i) => (
+                <div key={screen.screen_name} className={`cursor-pointer ${getHeaderOptionsClass(i)}`} onClick={() => switchScreen(i, screen)}>
+                    <span>{screen.screen_name}</span>
+                </div>
+            ))
+        )
+    }
+
+
+    const getHeaderOptionsClass = (index) =>
+    {
+        let classes = 'header-option ';
+        if (index < TOTAL_SCREENS.length - 1)
+            classes += "header-options-seperator"
+
+        if (selectedScreen === index)
+            classes += "selected-header-option";
+        return
+    }
+
+    const switchScreen = (index, screen) =>
+    {
+        let screenComponent = document.getElementById(screen.screen_name);
+        if (!screenComponent) return;
+
+        screenComponent.scrollIntoView({ behavior: "smooth" });
+        setSelectedScreen(index);
+        setShowHeadingoptions(false)
+    }
     return (
         <div className="fixed w-screen z-20" >
             <nav className="bg-orangeP dark:bg-gray-900 px-10" >
@@ -22,8 +73,9 @@ const Navbar = () =>
                         </svg>
                     </button>
                     <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-                        <ul className="font-medium flex flex-col p-2 text-xl md:p-0 rounded-lg md:flex-row xl:gap-18 lg:gap-10 xmd:gap-2 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                            <li>
+                        <ul className="font-medium gap-3 flex flex-col p-2 text-base xmd:text-xl md:p-0 rounded-lg md:flex-row md:gap-6 xl:gap-18 lg:gap-10 xmd:gap-2 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            {getHeaderOptions()}
+                            {/* <li>
                                 <a href="#Profile" className="block py-2 px-2  rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Profile</a>
                             </li>
                             <li>
@@ -40,7 +92,7 @@ const Navbar = () =>
                             </li>
                             <li>
                                 <a href="#contactMe" className="block py-2 px-2 rounded md:hover:bg-transparent md:border-0  md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Me</a>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
@@ -48,5 +100,3 @@ const Navbar = () =>
         </div>
     )
 }
-
-export default Navbar

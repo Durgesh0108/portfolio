@@ -37,13 +37,14 @@
     color: black;
 }
 
-@media (min-width: 768px){
-    .image{
+@media (min-width: 768px) {
+    .image {
         height: 250px;
     }
 }
-@media (min-width: 640px){
-    .image{
+
+@media (min-width: 640px) {
+    .image {
         height: 180px;
     }
 }
