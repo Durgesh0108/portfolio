@@ -239,12 +239,11 @@ export const CERTIFICATION_COURSES = [
 		],
 		description:
 			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
-		image: "food.jpg",
+		image: "web_development.jpg",
 	},
 	{
 		id: 2,
-		courseName:
-			"Node. Js, Express, MongoDb & More: The Complete Bootcamp 2023",
+		courseName: "Node Js, Express, MongoDb & More: The Complete Bootcamp",
 		instructor: "Jonas Schmedtmann",
 		Platform: "Udemy",
 		completionDate: "March 2023",
@@ -257,11 +256,11 @@ export const CERTIFICATION_COURSES = [
 		],
 		description:
 			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
-		image: "food.jpg",
+		image: "node_express_monodb.jpg",
 	},
 	{
 		id: 3,
-		courseName: "Web Development",
+		courseName: "Internshala Web Development",
 		instructor: "Internshala",
 		Platform: "Internshala",
 		completionDate: "Sept 2023",
@@ -279,23 +278,23 @@ export const CERTIFICATION_COURSES = [
 		],
 		description:
 			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
-		image: "food.jpg",
+		image: "internshala_Web_development.png",
 	},
-	{
-		id: 4,
-		courseName: "The React JS Portfolio Website",
-		instructor: "Ehizeex Okwuose",
-		Platform: "Udemy",
-		completionDate: "Oct 2023",
-		certificates: [
-			{
-				id: 1,
-				name: "React Js Portfolio Website",
-				certificate: "React_Portfolio.pdf",
-			},
-		],
-		description:
-			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
-		image: "food.jpg",
-	},
+	// {
+	// 	id: 4,
+	// 	courseName: "The React JS Portfolio Website",
+	// 	instructor: "Ehizeex Okwuose",
+	// 	Platform: "Udemy",
+	// 	completionDate: "Oct 2023",
+	// 	certificates: [
+	// 		{
+	// 			id: 1,
+	// 			name: "React Js Portfolio Website",
+	// 			certificate: "React_Portfolio.pdf",
+	// 		},
+	// 	],
+	// 	description:
+	// 		"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
+	// 	image: "food.jpg",
+	// },
 ];

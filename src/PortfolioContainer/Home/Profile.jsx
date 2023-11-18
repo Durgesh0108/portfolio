@@ -2,12 +2,15 @@
 
 import { AiFillInstagram } from 'react-icons/ai'
 import { BsLinkedin } from 'react-icons/bs'
-import "./Profile.css"
+import "./Profile.css";
+import ScrollService from '../../utilities/ScrollService';
 // import Navbar from './../../Components/Navbar/Navbar'
 // import Footer from './Footer/Footer'
 
-const Profile = ({id}) =>
+const Profile = ({ id }) =>
 {
+
+    // const scrollService = ScrollService();
     return (
         <>
             {/* <Navbar /> */}
@@ -25,7 +28,6 @@ const Profile = ({id}) =>
                             </div>
                             <div className="profile-details-name">
                                 <span className="primary-text">
-
                                     Hello, I'm <span className="highlighted-text">Durgesh</span>
                                 </span>
                             </div>
@@ -50,7 +52,7 @@ const Profile = ({id}) =>
                                 </span>
                             </div>
                             <div className="profile-options xs:z-10">
-                                <button className="btn primary-btn">
+                                <button className="btn primary-btn" onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
                                     Hire me
                                 </button>
                                 <a href="/pdf/Durgesh.pdf" download='Durgesh_Resume.pdf'>

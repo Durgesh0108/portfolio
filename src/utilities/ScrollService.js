@@ -1,7 +1,7 @@
 import { TOTAL_SCREENS } from "./commonUtils";
 import { Subject } from "rxjs";
 
-export default class ScrollService {
+class ScrollService {
 	static scrollHandler = new ScrollService();
 	static currentScreenBroadcaster = new Subject();
 	static currentScreenFadeIn = new Subject();
@@ -113,3 +113,5 @@ export default class ScrollService {
 		}
 	};
 }
+
+export default ScrollService;

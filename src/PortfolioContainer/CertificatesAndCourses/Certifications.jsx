@@ -6,12 +6,12 @@ const Certifications = ({id}) =>
 {
     return (
         <div className="bg-indigoP bg-" id={id}>
-            <div className='md:container md:m-auto p-5 grid grid-row-2 gap-16 '>
+            <div className='md:container md:m-auto p-3 md:p-5 grid grid-row-2 gap-16 '>
                 <div className='justify-self-center'>
                     <h1 className='text-3xl font-bold text-white '>Certification Courses</h1>
                 </div>
 
-                <div className='flex gap-8 overflow-auto p-10'>
+                <div className='flex gap-4 md:gap-8 overflow-auto p-2 sm:p-5 md:p-8'>
                     {CERTIFICATION_COURSES.map((certification) => (
                         <Certification key={certification.id} certification={certification} />
                     ))}

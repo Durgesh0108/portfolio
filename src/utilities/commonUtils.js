@@ -7,7 +7,7 @@ import Education from "../PortfolioContainer/Resume/Components/Education";
 import Skills from "../PortfolioContainer/Resume/Components/Skills";
 import PersonalSkills from "../PortfolioContainer/Resume/Components/PeronalSkills";
 import Activities from "../PortfolioContainer/Resume/Components/Activities";
-import contactMe from "../PortfolioContainer/ContactMe/contactMe";
+import ContactMe from "../PortfolioContainer/ContactMe/contactMe";
 
 export const TOTAL_SCREENS = [
 	{
@@ -32,7 +32,7 @@ export const TOTAL_SCREENS = [
 	},
 	{
 		screen_name: "Contact Me",
-		component: contactMe
+		component: ContactMe
 	}
 ];
 
