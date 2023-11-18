@@ -20,17 +20,17 @@ const Certification = ({ key, certification }) =>
                         <p className='text-xs md:text-lg opacity-70 text-justify'>{certification.description}</p>
                     </div>
                 </div>
-                <div className='md:flex md:flex-col gap-4 justify-self-end text-white font-semibold text-xs md:text-base md:px-2 hidden'>
+                {/* <div className='md:flex md:flex-col gap-4 justify-self-end text-white font-semibold text-xs md:text-base md:px-2 hidden'>
                     <hr />
                     <div className='flex justify-evenly'>
-                        {/* <a href={Certification.liveLink}> */}
+                        <a href={Certification.liveLink}>
                             <button className='p-2 px-3 md:px-5 bg-orangeP rounded-2xl hover:text-white'>Go Live</button>
-                        {/* </a> */}
-                        {/* <a href={Certification.githubLink}> */}
+                        </a>
+                        <a href={Certification.githubLink}>
                             <button className='p-2 px-3 md:px-5 bg-orangeP rounded-2xl hover:text-white'>Github</button>
-                        {/* </a> */}
+                        </a>
                     </div>
-                </div>
+                </div> */}
             </div>
         </Card>
     )
