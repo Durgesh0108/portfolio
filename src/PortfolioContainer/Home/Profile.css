@@ -114,9 +114,9 @@
     padding-left: 8px;
 }
 
-.colz .colz-icons i:hover {
+/* .colz .colz-icons i:hover {
     transform: scale(1.5);
-}
+} */
 
 .profile-options {
     display: flex;
