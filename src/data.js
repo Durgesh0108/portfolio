@@ -239,7 +239,8 @@ export const CERTIFICATION_COURSES = [
 		],
 		description:
 			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
-		image: "web_development.jpg",
+		image: "udemy_web_development.png",
+		completed: true,
 	},
 	{
 		id: 2,
@@ -256,7 +257,8 @@ export const CERTIFICATION_COURSES = [
 		],
 		description:
 			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
-		image: "node_express_monodb.jpg",
+		image: "udemy_nodejs.png",
+		completed: true,
 	},
 	{
 		id: 3,
@@ -279,22 +281,79 @@ export const CERTIFICATION_COURSES = [
 		description:
 			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
 		image: "internshala_Web_development.png",
+		completed: true,
 	},
-	// {
-	// 	id: 4,
-	// 	courseName: "The React JS Portfolio Website",
-	// 	instructor: "Ehizeex Okwuose",
-	// 	Platform: "Udemy",
-	// 	completionDate: "Oct 2023",
-	// 	certificates: [
-	// 		{
-	// 			id: 1,
-	// 			name: "React Js Portfolio Website",
-	// 			certificate: "React_Portfolio.pdf",
-	// 		},
-	// 	],
-	// 	description:
-	// 		"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
-	// 	image: "food.jpg",
-	// },
+	{
+		id: 4,
+		courseName:
+			"100 Days of Code: The Complete Python Pro Bootcamp for 2023",
+		instructor: "Dr. Angela Yu",
+		Platform: "Udemy",
+		completionDate: "",
+		certificates: [],
+		description:
+			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
+		image: "100_days_of_python.png",
+		completed: false,
+	},
+	{
+		id: 5,
+		courseName: "React - The Complete Guide 2023",
+		instructor: "Maximilian Schwarzmüller",
+		Platform: "Udemy",
+		completionDate: "",
+		certificates: [],
+		description:
+			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
+		image: "react.png",
+		completed: false,
+	},
+	{
+		id: 6,
+		courseName: "The Git & Github Bootcamp",
+		instructor: "Colt Steele",
+		Platform: "Udemy",
+		completionDate: "",
+		certificates: [],
+		description:
+			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
+		image: "github.png",
+		completed: false,
+	},
+	{
+		id: 7,
+		courseName: "PHP for Beginners",
+		instructor: "Edwin Diaz",
+		Platform: "Udemy",
+		completionDate: "",
+		certificates: [],
+		description:
+			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
+		image: "php.png",
+		completed: false,
+	},
+	{
+		id: 8,
+		courseName: "Python Django - Full Stack Web Developer Bootcamp",
+		instructor: "Jose Portilla",
+		Platform: "Udemy",
+		completionDate: "",
+		certificates: [],
+		description:
+			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
+		image: "python_django.png",
+		completed: false,
+	},
+	{
+		id: 9,
+		courseName: "The Ultimate MySQL Bootcamp",
+		instructor: "Colt Steele",
+		Platform: "Udemy",
+		completionDate: "",
+		certificates: [],
+		description:
+			"Full stack web application for campground reviews and photos using NodeJS, Express, MongoDB, EJS, PassportJS, Cloudinary",
+		image: "mysql.png",
+		completed: false,
+	},
 ];
