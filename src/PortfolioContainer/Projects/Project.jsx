@@ -33,7 +33,7 @@ const Project = ({ key, project }) => {
 						/>
 						{/* <img src={`/img/${project.image}`} alt={project.name} className='image rounded-lg w-[450px] h-[230px]' /> */}
 						<div className="middle w-full hover:none">
-							<div className="links absolute flex w-full justify-between -top-20 px-4 md:text-4xl text-lg">
+							<div className="links absolute flex w-full justify-between md:-top-20 -top-16 px-4 md:text-4xl text-lg">
 								<a
 									href={project.liveLink}
 									target="_blank"
