@@ -24,9 +24,12 @@ const Certification = ({ key, certification }) => {
 						<p className="font-semibold text-base sm:text-xl md:text-2xl py-2 tracking-wide">
 							{certification.courseName}
 						</p>
+						{/* <div className="w-1/2"> */}
+						{/* <p className="text-xs md:text-lg opacity-70 text-justify overflow-hidden text-ellipsis"> */}
 						<p className="text-xs md:text-lg opacity-70 text-justify">
 							{certification.description}
 						</p>
+						{/* </div> */}
 					</div>
 				</div>
 				<div className="md:flex md:flex-col gap-4 justify-self-end text-white font-semibold text-xs md:text-base md:px-2 hidden">

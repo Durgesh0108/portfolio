@@ -26,20 +26,38 @@ const Project = ({ key, project }) => {
 			<div className="flex flex-col justify-between h-full gap-4 w-[170px] sm:w-[280px] md:w-[420px]">
 				<div className="flex flex-col gap-4 ">
 					<div className="overlay-demo">
-                        <div className="links absolute flex w-full justify-between p-4 text-4xl">
-							<FaArrowRight />
-							<FaGithub />
-						</div>
 						<img
 							src={`/img/${project.image}`}
 							alt={project.name}
 							className="image rounded-lg"
 						/>
 						{/* <img src={`/img/${project.image}`} alt={project.name} className='image rounded-lg w-[450px] h-[230px]' /> */}
-						<div className="middle">
-							<figcaption className="text font-semibold text-sm md:text-2xl">
-								{project.name}
-							</figcaption>
+						<div className="middle w-full hover:none">
+							<div className="links absolute flex w-full justify-between -top-20 px-4 md:text-4xl text-lg">
+								<a
+									href={project.liveLink}
+									target="_blank"
+									rel="noreferrer"
+								>
+									<FaArrowRight />
+								</a>
+								<a
+									href={project.githubLink}
+									target="_blank"
+									rel="noreferrer"
+								>
+									<FaGithub />
+								</a>
+							</div>
+							<a
+								href={project.liveLink}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<figcaption className="text font-semibold text-sm md:text-2xl">
+									{project.name}
+								</figcaption>
+							</a>
 						</div>
 					</div>
 					<div className="px-4 md:px-3 hidden md:block">
