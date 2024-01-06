@@ -3,6 +3,7 @@ import Card from "../../Components/Card/Card";
 import "./Index.css";
 import { FaGithub } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // import { Tilt } from 'react-tilt'
 
@@ -27,7 +28,7 @@ const Project = ({ key, project }) => {
 				<div className="flex flex-col gap-4 ">
 					<div className="overlay-demo">
 						<img
-							src={`/img/${project.image}`}
+							src={`/img/${project.slug}/${project.image}`}
 							alt={project.name}
 							className="image rounded-lg"
 						/>
@@ -81,15 +82,11 @@ const Project = ({ key, project }) => {
 								Go Live
 							</button>
 						</a>
-						<a
-							href={project.githubLink}
-							target="_blank"
-							rel="noreferrer"
-						>
+						<Link to={`/projects/${project.slug}`}>
 							<button className="p-2 px-3 md:px-5 bg-orangeP rounded-2xl hover:text-white hover:scale-110">
-								Github
+								View Details
 							</button>
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+
 :root {
   --light-blue: #04C3FF;
   --light-blue-shadow: rgb(69 211 255 / 27%);
@@ -17,4 +22,9 @@
   --toast-shadow: #9c9c9ce3;
   --toast-success: #0CBFAE;
   --loader-color: #0CBFAE
+}
+
+body {
+  /* font-family: 'Merriweather', serif; */
+  font-family: 'Salsa',cursive;
 }
