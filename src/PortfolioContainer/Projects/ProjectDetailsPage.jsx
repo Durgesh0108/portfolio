@@ -11,8 +11,8 @@ const ProjectDetailsPage = () => {
 
 	console.log(project.name);
 	return (
-		<div className="flex flex-col bg-indigoP h-screen overflow-auto">
-			<BasicNavbar />
+		<div className=" bg-indigoP h-screen overflow-auto">
+			{/* <BasicNavbar /> */}
 			<div className="relative top-32 text-white font-medium text-lg max-w-7xl m-auto flex flex-col gap-10">
 				<div className="grid grid-cols-2 gap-12 ">
 					<div className="flex flex-col gap-8 ">

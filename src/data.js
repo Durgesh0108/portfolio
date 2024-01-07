@@ -111,23 +111,31 @@ export const PROJECTS = [
 			{ screenshot: "screenshot-6.png" },
 			{ screenshot: "screenshot-7.png" },
 			{ screenshot: "screenshot-8.png" },
-			{ screenshot: "screenshot-9.png" },
-			{ screenshot: "screenshot-10.png" },
-			{ screenshot: "screenshot-11.png" },
-			{ screenshot: "screenshot-12.png" },
 		],
 		learnings: [
-			{ learning: "JWT Authentication" },
+			{ learning: "Passport Authentication" },
 			{
-				learning:
-					"CRUD Operations for Available Glass using custom api",
+				learning: "CRUD Operations for Available Camp using custom api",
 			},
 			{ learning: "Making Api Routes" },
-			{ learning: "Saving Encrypted Password using Bcrypt" },
-			{ learning: "Pug Templates to Display Dynamic Data" },
+			{ learning: "EJS Templates to Display Dynamic Data" },
 			{ learning: "Saving Data to MongoDB" },
 			{ learning: "Building Amazing Layout with Tailwind CSS" },
 			{ learning: "Creating Custom Middleware using Node and Express" },
+		],
+		features: [
+			{
+				feature:
+					"Login and Registration of Users Using Passport Library",
+			},
+			{
+				feature:
+					"User can Add,Update and Delete Reviews on the Product",
+			},
+			{ feature: "Protected Routes for better user experience" },
+			{ feature: "Admin can Add, Update and Delete Campgrounds" },
+			{ feature: "User can Make payment using stripe(Dummy Data only.)" },
+			{ feature: "User can Update their profile and change Password" },
 		],
 	},
 	{
@@ -153,27 +161,23 @@ export const PROJECTS = [
 			{ screenshot: "screenshot-2.png" },
 			{ screenshot: "screenshot-3.png" },
 			{ screenshot: "screenshot-4.png" },
-			{ screenshot: "screenshot-5.png" },
-			{ screenshot: "screenshot-6.png" },
-			{ screenshot: "screenshot-7.png" },
-			{ screenshot: "screenshot-8.png" },
-			{ screenshot: "screenshot-9.png" },
-			{ screenshot: "screenshot-10.png" },
-			{ screenshot: "screenshot-11.png" },
-			{ screenshot: "screenshot-12.png" },
 		],
 		learnings: [
-			{ learning: "JWT Authentication" },
+			{ learning: "Pagination Concept" },
 			{
-				learning:
-					"CRUD Operations for Available Glass using custom api",
+				learning: "State Management",
 			},
-			{ learning: "Making Api Routes" },
-			{ learning: "Saving Encrypted Password using Bcrypt" },
-			{ learning: "Pug Templates to Display Dynamic Data" },
-			{ learning: "Saving Data to MongoDB" },
+			{ learning: "Display Dynamic Data" },
+			{ learning: "Reusable React Components to display Different Data" },
 			{ learning: "Building Amazing Layout with Tailwind CSS" },
-			{ learning: "Creating Custom Middleware using Node and Express" },
+		],
+		features: [
+			{
+				feature: "Pagination to limit the data available on the page",
+			},
+			{
+				feature: "Detail of each Product available Dynamic",
+			},
 		],
 	},
 	{
@@ -201,26 +205,27 @@ export const PROJECTS = [
 			{ screenshot: "screenshot-3.png" },
 			{ screenshot: "screenshot-4.png" },
 			{ screenshot: "screenshot-5.png" },
-			{ screenshot: "screenshot-6.png" },
-			{ screenshot: "screenshot-7.png" },
-			{ screenshot: "screenshot-8.png" },
-			{ screenshot: "screenshot-9.png" },
-			{ screenshot: "screenshot-10.png" },
-			{ screenshot: "screenshot-11.png" },
-			{ screenshot: "screenshot-12.png" },
 		],
 		learnings: [
-			{ learning: "JWT Authentication" },
+			{ learning: "Pagination Concept" },
+			{ learning: "Display Filtered Data according to City" },
 			{
-				learning:
-					"CRUD Operations for Available Glass using custom api",
+				learning: "State Management",
 			},
-			{ learning: "Making Api Routes" },
-			{ learning: "Saving Encrypted Password using Bcrypt" },
-			{ learning: "Pug Templates to Display Dynamic Data" },
-			{ learning: "Saving Data to MongoDB" },
+			{ learning: "Display Dynamic Data" },
+			{ learning: "Reusable React Components to display Different Data" },
 			{ learning: "Building Amazing Layout with Tailwind CSS" },
-			{ learning: "Creating Custom Middleware using Node and Express" },
+		],
+		features: [
+			{
+				feature: "Pagination to limit the data available on the page",
+			},
+			{
+				feature: "Display Filtered Data according to City",
+			},
+			{
+				feature: "Detail of each Property available Dynamic",
+			},
 		],
 	},
 	{
@@ -245,28 +250,23 @@ export const PROJECTS = [
 			{ screenshot: "screenshot-1.png" },
 			{ screenshot: "screenshot-2.png" },
 			{ screenshot: "screenshot-3.png" },
-			{ screenshot: "screenshot-4.png" },
-			{ screenshot: "screenshot-5.png" },
-			{ screenshot: "screenshot-6.png" },
-			{ screenshot: "screenshot-7.png" },
-			{ screenshot: "screenshot-8.png" },
-			{ screenshot: "screenshot-9.png" },
-			{ screenshot: "screenshot-10.png" },
-			{ screenshot: "screenshot-11.png" },
-			{ screenshot: "screenshot-12.png" },
 		],
 		learnings: [
-			{ learning: "JWT Authentication" },
+			{ learning: "Display Modal" },
 			{
-				learning:
-					"CRUD Operations for Available Glass using custom api",
+				learning: "State Management",
 			},
-			{ learning: "Making Api Routes" },
-			{ learning: "Saving Encrypted Password using Bcrypt" },
-			{ learning: "Pug Templates to Display Dynamic Data" },
-			{ learning: "Saving Data to MongoDB" },
+			{ learning: "Display Dynamic Data" },
+			{ learning: "Reusable React Components to display Different Data" },
 			{ learning: "Building Amazing Layout with Tailwind CSS" },
-			{ learning: "Creating Custom Middleware using Node and Express" },
+		],
+		features: [
+			{
+				feature: "Update the Cart using Button",
+			},
+			{
+				feature: "Display Modal to show the Cart data",
+			},
 		],
 	},
 ];

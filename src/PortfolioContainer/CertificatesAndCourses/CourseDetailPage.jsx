@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { CERTIFICATION_COURSES } from "../../data";
-import Header from "../Home/Header/Header";
 import Card from "../../Components/Card/Card";
+import { BasicNavbar } from "../../Components/BasicNavbar";
 
 const CourseDetailPage = () => {
 	const { slug } = useParams();
@@ -10,7 +10,7 @@ const CourseDetailPage = () => {
 	console.log(course.certificates);
 	return (
 		<div className="bg-indigoP h-screen overflow-auto">
-			<Header />
+			<BasicNavbar />
 			<div className="relative top-32 text-white font-medium text-lg max-w-7xl m-auto ">
 				<div className="grid grid-cols-2 gap-12 h-[550px] ">
 					<div className="flex flex-col gap-8 ">
@@ -52,23 +52,22 @@ const CourseDetailPage = () => {
 							alt=""
 							className="w-full h-[250px] rounded-xl"
 						/>
-                        {
-                            course.description.learning.length > 0 && (
-                                
-						<Card className="bg-purple-400 text-black p-4 flex flex-col items-center gap-4">
-							<h1 className="text-white font-bold text-2xl">
-								Learnings
-							</h1>
-							<ul className="flex flex-col gap-4 list-disc px-2">
-								{course.description.learning.map((point) => (
-                                    <Card className="text-sm bg-purple-700 p-2">
-										{point.point}
-									</Card>
-								))}
-							</ul>
-						</Card>
-                                )
-    }
+						{course.description.learning.length > 0 && (
+							<Card className="bg-purple-400 text-black p-4 flex flex-col items-center gap-4">
+								<h1 className="text-white font-bold text-2xl">
+									Learnings
+								</h1>
+								<ul className="flex flex-col gap-4 list-disc px-2">
+									{course.description.learning.map(
+										(point) => (
+											<Card className="text-sm bg-purple-700 p-2">
+												{point.point}
+											</Card>
+										)
+									)}
+								</ul>
+							</Card>
+						)}
 					</div>
 				</div>
 			</div>
