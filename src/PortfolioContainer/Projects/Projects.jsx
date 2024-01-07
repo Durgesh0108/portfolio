@@ -12,7 +12,7 @@ const Projects = ({ id }) => {
 			<div className="bg-indigoP px-4" id={id}>
 				<div className="md:container md:m-auto p-3 md:p-5 grid grid-row-2 gap-10 ">
 					<div className="flex justify-between items-center">
-						<h1 className="text-3xl font-bold text-white ">
+						<h1 className="text-3xl font-bold text-white place-self-center">
 							Projects
 						</h1>
 						<Link

@@ -1,14 +1,11 @@
 import "./App.css";
 
-// import Navbar from "./Components/Navbar/Navbar";
-// import Header from "./PortfolioContainer/Home/Header/Header";
-// import PortfolioContainer from "./PortfolioContainer/PortfolioContainer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home";
-import Certifications from "./PortfolioContainer/CertificatesAndCourses/Certifications";
 import CourseDetailPage from "./PortfolioContainer/CertificatesAndCourses/CourseDetailPage";
-import Projects from "./PortfolioContainer/Projects/Projects";
 import ProjectDetailsPage from "./PortfolioContainer/Projects/ProjectDetailsPage";
+import { ProjectsPage } from "./Pages/ProjectsPage";
+import { CoursePage } from "./Pages/CoursePage";
 
 const router = createBrowserRouter([
 	{
@@ -23,7 +20,7 @@ const router = createBrowserRouter([
 				children: [
 					{
 						index: true,
-						element: <Certifications />,
+						element: <CoursePage />,
 					},
 					{
 						path: ":slug", // dynamic path parameter
@@ -36,7 +33,7 @@ const router = createBrowserRouter([
 				children: [
 					{
 						index: true,
-						element: <Projects />,
+						element: <ProjectsPage />,
 					},
 					{
 						path: ":slug", // dynamic path parameter

@@ -26,11 +26,11 @@ const Project = ({ key, project }) => {
 		<Card key={key} className="bg-white md:pb-3 h-full">
 			<div className="flex flex-col justify-between h-full gap-4 w-[170px] sm:w-[280px] md:w-[420px]">
 				<div className="flex flex-col gap-4 ">
-					<div className="overlay-demo">
+					<div className="overlay-demo w-full">
 						<img
 							src={`/img/${project.slug}/${project.image}`}
 							alt={project.name}
-							className="image rounded-lg"
+							className="image rounded-lg max-w-full"
 						/>
 						{/* <img src={`/img/${project.image}`} alt={project.name} className='image rounded-lg w-[450px] h-[230px]' /> */}
 						<div className="middle w-full hover:none">
