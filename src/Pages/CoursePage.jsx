@@ -1,16 +1,34 @@
 import React from "react";
 import { CERTIFICATION_COURSES } from "../data";
 import Section from "../Components/Section";
-import { BasicNavbar } from "../Components/BasicNavbar";
+// import { BasicNavbar } from "../Components/BasicNavbar";
 import { Link } from "react-router-dom";
 import Card from "../Components/Card/Card";
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 
 export const CoursePage = () => {
 	return (
-		<div className="bg-indigoP w-screen h-full overflow-auto">
-			<BasicNavbar />
-			<Section className="">
-				<div className="md:container md:m-auto p-3 md:p-5 grid grid-row-2 gap-10 top-8 relative max-w-7xl md:top-28 mb-28 md:20 px-24">
+		<div className="bg-indigoP w-screen h-full overflow-auto py-12">
+			{/* <BasicNavbar /> */}
+			<Section className="flex flex-col gap-4">
+				<div className="flex justify-between">
+					<Link
+						to="/"
+						className="text-2xl text-white font-bold hover:text-inherit flex gap-4 items-center"
+					>
+						<FaArrowLeft />
+						Back To Profile
+					</Link>
+					<Link
+						to="/projects"
+						className="text-2xl text-white font-bold hover:text-inherit flex gap-4 items-center"
+					>
+						All Projects
+						<FaArrowRight/>
+					</Link>
+				</div>
+				<div className="grid grid-row-2 gap-10 ">
 					<div className="flex justify-center items-center">
 						<h1 className="text-3xl font-bold text-white place-self-center">
 							Courses

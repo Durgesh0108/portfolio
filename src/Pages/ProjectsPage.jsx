@@ -2,16 +2,36 @@ import React from "react";
 
 import { PROJECTS } from "../data";
 import Section from "../Components/Section";
-import { BasicNavbar } from "../Components/BasicNavbar";
+// import { BasicNavbar } from "../Components/BasicNavbar";
 import { Link } from "react-router-dom";
 import Card from "../Components/Card/Card";
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
+
+
 
 export const ProjectsPage = () => {
 	return (
-		<div className="bg-indigoP w-screen h-full overflow-auto">
+		<div className="bg-indigoP w-screen h-full overflow-auto py-12">
 			{/* <BasicNavbar /> */}
-			<Section>
-				<div className="md:container md:m-auto p-3 md:p-5 grid grid-row-2 gap-10 top-8 relative max-w-7xl md:top-28 mb-28 md:20 px-24">
+			<Section className="flex flex-col gap-4">
+				<div className="flex justify-between">
+					<Link
+						to="/"
+						className="text-2xl text-white font-bold hover:text-inherit flex gap-4 items-center"
+					>
+						<FaArrowLeft />
+						Back To Profile
+					</Link>
+					<Link
+						to="/courses"
+						className="text-2xl text-white font-bold hover:text-inherit flex gap-4 items-center"
+					>
+						All Courses
+						<FaArrowRight />
+					</Link>
+				</div>
+				<div className="grid grid-row-2 gap-10 ">
 					<div className="flex justify-center items-center">
 						<h1 className="text-3xl font-bold text-white place-self-center">
 							Project
@@ -20,64 +40,64 @@ export const ProjectsPage = () => {
 
 					<div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12">
 						{PROJECTS.map((project) => (
-							<Link
-								to={`/projects/${project.slug}`}
-								key={project.id}
-								className="hover:no-underline hover:text-black"
-							>
-								<Card className="bg-white md:pb-3 h-full">
-									{/* <Card className="bg-purple-700 text-white md:pb-3 h-full"></Card> */}
-									<div className="flex flex-col justify-between h-full gap-4 ">
-										<div className="grid md:grid-cols-1 grid-cols-2 gap-4 ">
-											<div className="overlay-demo w-1/2 md:w-full">
-												<img
-													src={`/img/${project.slug}/${project.image}`}
-													alt={project.name}
-													className="image rounded-lg "
-												/>
-												{/* <img src={`/img/${project.image}`} alt={project.name} className='image rounded-lg w-[450px] h-[230px]' /> */}
-												<div className="middle">
-													<figcaption className="text font-semibold text-sm md:text-2xl">
-														{project.name}
-													</figcaption>
-												</div>
-											</div>
-											<div className="px-4 md:px-3 md:block">
-												<p className="font-semibold text-lg md:text-2xl py-2 tracking-wide">
+							// <Link
+							// 	to={`/projects/${project.slug}`}
+							// 	key={project.id}
+							// 	className="hover:no-underline hover:text-black"
+							// >
+							<Card className="bg-white md:pb-3 h-full">
+								{/* <Card className="bg-purple-700 text-white md:pb-3 h-full"></Card> */}
+								<div className="flex flex-col justify-between h-full gap-4 ">
+									<div className="grid md:grid-cols-1 grid-cols-2 gap-4 ">
+										<div className="overlay-demo w-1/2 md:w-full">
+											<img
+												src={`/img/${project.slug}/${project.image}`}
+												alt={project.name}
+												className="image rounded-lg "
+											/>
+											{/* <img src={`/img/${project.image}`} alt={project.name} className='image rounded-lg w-[450px] h-[230px]' /> */}
+											<div className="middle">
+												<figcaption className="text font-semibold text-sm md:text-2xl">
 													{project.name}
-												</p>
-												{/* <div className="w-1/2"> */}
-												{/* <p className="text-xs md:text-lg opacity-70 text-justify overflow-hidden text-ellipsis"> */}
-												<p className="text-xs md:text-lg opacity-70 text-justif">
-													{project.description}
-												</p>
-												{/* </div> */}
+												</figcaption>
 											</div>
 										</div>
-										<div className="md:flex md:flex-col gap-4 text-white font-semibold text-xs md:text-base md:px-2 hidden">
-											<hr />
-											<div className="flex justify-evenly">
-												<a
-													href={project.liveLink}
-													target="_blank"
-													rel="noreferrer"
-												>
-													<button className="p-2 px-3 md:px-5 bg-orangeP rounded-2xl hover:text-white hover:scale-110 ">
-														Go Live
-													</button>
-												</a>
-												<Link
-													to={`/projects/${project.slug}`}
-												>
-													<button className="p-2 px-3 md:px-5 bg-orangeP rounded-2xl hover:text-white hover:scale-110">
-														View Details
-													</button>
-												</Link>
-											</div>
+										<div className="px-4 md:px-3 md:block">
+											<p className="font-semibold text-lg md:text-2xl py-2 tracking-wide">
+												{project.name}
+											</p>
+											{/* <div className="w-1/2"> */}
+											{/* <p className="text-xs md:text-lg opacity-70 text-justify overflow-hidden text-ellipsis"> */}
+											<p className="text-xs md:text-lg opacity-70 text-justif">
+												{project.description}
+											</p>
+											{/* </div> */}
 										</div>
 									</div>
-								</Card>
-							</Link>
+									<div className="md:flex md:flex-col gap-4 text-white font-semibold text-xs md:text-base md:px-2 hidden">
+										<hr />
+										<div className="flex justify-evenly">
+											<a
+												href={project.liveLink}
+												target="_blank"
+												rel="noreferrer"
+											>
+												<button className="p-2 px-3 md:px-5 bg-orangeP rounded-2xl hover:text-white hover:scale-110 ">
+													Go Live
+												</button>
+											</a>
+											<Link
+												to={`/projects/${project.slug}`}
+											>
+												<button className="p-2 px-3 md:px-5 bg-orangeP rounded-2xl hover:text-white hover:scale-110">
+													View Details
+												</button>
+											</Link>
+										</div>
+									</div>
+								</div>
+							</Card>
+							// </Link>
 						))}
 					</div>
 				</div>

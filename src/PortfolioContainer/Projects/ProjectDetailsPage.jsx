@@ -3,7 +3,8 @@ import { Link, useParams } from "react-router-dom";
 import { PROJECTS } from "../../data";
 // import Header from "../Home/Header/Header";
 import Card from "../../Components/Card/Card";
-import { BasicNavbar } from "../../Components/BasicNavbar";
+import { FaArrowLeft } from "react-icons/fa";
+// import { BasicNavbar } from "../../Components/BasicNavbar";
 
 const ProjectDetailsPage = () => {
 	const { slug } = useParams();
@@ -13,7 +14,14 @@ const ProjectDetailsPage = () => {
 	return (
 		<div className=" bg-indigoP h-screen overflow-auto">
 			{/* <BasicNavbar /> */}
-			<div className="relative top-32 text-white font-medium text-lg max-w-7xl m-auto flex flex-col gap-10">
+			<div className="py-12 text-white font-medium text-lg max-w-7xl m-auto flex flex-col gap-10">
+				<Link
+					to="/projects"
+					className="text-2xl text-white font-bold hover:text-inherit flex gap-4 items-center"
+				>
+					<FaArrowLeft />
+					All Projects
+				</Link>
 				<div className="grid grid-cols-2 gap-12 ">
 					<div className="flex flex-col gap-8 ">
 						<div className="flex flex-col gap-2">
@@ -70,7 +78,9 @@ const ProjectDetailsPage = () => {
 					</div>
 				</div>
 				<div className="flex flex-col gap-4">
-					<h1>Learnings and Features:</h1>
+					<h1 className="text-2xl font-bold">
+						Learnings and Features:
+					</h1>
 					<div className="flex gap-10 h-[400px] overflow-auto p-4">
 						{project.learnings.length > 0 && (
 							<Card className="w-1/2 bg-purple-400 text-black p-4 flex flex-col gap-4 overflow-auto ">

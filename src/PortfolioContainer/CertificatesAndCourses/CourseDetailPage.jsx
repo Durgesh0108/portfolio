@@ -2,7 +2,9 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { CERTIFICATION_COURSES } from "../../data";
 import Card from "../../Components/Card/Card";
-import { BasicNavbar } from "../../Components/BasicNavbar";
+import { FaArrowLeft } from "react-icons/fa";
+
+// import { BasicNavbar } from "../../Components/BasicNavbar";
 
 const CourseDetailPage = () => {
 	const { slug } = useParams();
@@ -10,8 +12,15 @@ const CourseDetailPage = () => {
 	console.log(course.certificates);
 	return (
 		<div className="bg-indigoP h-screen overflow-auto">
-			<BasicNavbar />
-			<div className="relative top-32 text-white font-medium text-lg max-w-7xl m-auto ">
+			{/* <BasicNavbar /> */}
+			<div className="py-12 text-white font-medium text-lg max-w-7xl m-auto flex flex-col gap-12">
+				<Link
+					to="/courses"
+					className="text-2xl text-white font-bold hover:text-inherit flex gap-4 items-center"
+				>
+					<FaArrowLeft />
+					All Courses
+				</Link>
 				<div className="grid grid-cols-2 gap-12 h-[550px] ">
 					<div className="flex flex-col gap-8 ">
 						<div>
